@@ -1,0 +1,7 @@
+{
+  "name": "vue-top-scroll",
+  "version": "1.0.0",
+  "description": "vue component for 'back to top' responsive button",
+  "main": "index.js",
+  "author": "deerdama"
+}
