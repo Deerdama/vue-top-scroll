@@ -1,7 +1,10 @@
 vue-top-scroll
 ================
 
-Simple customizable Vue component to add anywhere for a responsive "back to top" button. 
+Simple customizable Vue component to add anywhere for a responsive "back to top" button.
+
+![Alt Text](https://media.giphy.com/media/YzQaAyoNoOjWYFmsgJ/giphy.gif)
+
 
 Installation
 ----------------------------------
@@ -10,24 +13,32 @@ Installation
 Basic Usage
 ----------------------------------
 
-* Register the component in your main app-vue.js file
+* Register the component in your main app.js or equivalent file, eg:
+
 ```javascript
-Vue.component('scroll-top', require('./components/ScrollTopComponent.vue'));
+import TopScroll from 'vue-top-scroll';
+
+Vue.component('top-scroll', TopScroll);
 ```
 
-* Once registered you can just add it to any page
+* Once registered you can just add it to any component
+
 ```html
-<scroll-top></scroll-top>
+
+<top-scroll></top-scroll>
 ```
 
-* By default it uses font awesome 5 `far fa-angle-up` icon but you can pass an `:icon` prop with anything else 
-(see [available props](#available-props) for details)
+* The look and behavior can be modified by passing different [props](#available-props)
+  (see [available props](#available-props) for details)
+
+
+* By default it uses font awesome 5 `far fa-angle-up` icon but you can pass an `icon` prop with anything else
 
 [](#available-props)Available props
 ----------------------------------
 
-You can either use the component as it is or pass some extra arguments in case you want to customize it.
-None of the props is required
+You can either use the component as it is or pass some extra arguments in case you want to customize it. None of the
+props is required
 
 | Name | Default | Type | Description |
 | --- | --- | --- | --- |
@@ -40,17 +51,20 @@ None of the props is required
 | right | 50px | String | Position from the right edge |
 | bottom | 80px | String | Position from the bottom |
 
-
 * Customized example
 
 ```html
-<scroll-top :color="'#29a0ff'"
-            :icon="'glyphicon glyphicon-chevron-up'"
-            :size="'70px'"
-            :font="'32px'"
-            :fontcolor="'#000'"
-            :visibleoffset="900">
-</scroll-top>
 
+<top-scroll color="#0091ea"
+            icon="glyphicon glyphicon-chevron-up"
+            size="50px"
+            font="25px"
+            fontcolor="#000"
+            visibleoffset="900"
+            right="10px"
+            bottom="30px">
+</top-scroll>
 ```
+
+![Alt Text](https://media.giphy.com/media/cq4li91wKk2I4K90A2/giphy.gif)
 

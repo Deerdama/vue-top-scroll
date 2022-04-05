@@ -1,7 +1,25 @@
 {
   "name": "vue-top-scroll",
   "version": "1.0.0",
-  "description": "vue component for 'back to top' responsive button",
-  "main": "index.js",
-  "author": "deerdama"
+  "description": "simple customizable 'back to top' button vue component ",
+  "main": "src/VueScrollComponent.vue",
+  "author": "deerdama",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Deerdama/vue-top-scroll.git"
+  },
+  "keywords": [
+    "scroll",
+    "top",
+    "back top",
+    "vue"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Deerdama/vue-top-scroll/issues"
+  },
+  "homepage": "https://github.com/Deerdama/vue-top-scroll#readme"
 }
